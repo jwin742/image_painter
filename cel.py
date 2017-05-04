@@ -30,7 +30,7 @@ if not os.path.exists(output_folder):
 def main():
     
     img = cv2.imread(input_file, cv2.IMREAD_COLOR)
-    print("casThink")
+    
     filtered_image = cv2.bilateralFilter(img, 15, 580,580)
     cv2.imwrite(path.join(output_folder, "1filter.jpg"), filtered_image)
 
